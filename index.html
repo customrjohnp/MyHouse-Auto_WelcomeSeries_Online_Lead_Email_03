@@ -195,29 +195,71 @@
               </td>
             </tr>
 
-            <!-- REVIEW BLOCK 1 -->
-            <tr>
-              <td style="padding:24px 20px;background:#f5ece9;">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;">
-                  <tr>
-                    <td class="stack" width="50%" valign="top" style="padding:0 10px;">
-                      <a href="https://myhouse.com.au/products/riley-bamboo-cotton-sheet-set" target="_blank">
-                        <img src="http://image.myhouse.com.au/custloads/1027522498/md_611724.jpg" width="260" alt="Ashton Sheet Set" style="width:100%;max-width:260px;">
-                      </a>
-                    </td>
-                    <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
-                      <div style="text-align:center;color:#212b36;">
-                        <div style="font-size:19px;margin:8px 0 10px;">Carl's Bedroom Favourites</div>
-                        <div style="margin:4px 0 14px;">
-                          
-                        </div>
-                        <div style="font-size:15px;line-height:1.6;">"Nothing beats sinking into the sofest comfortable sheets at the end of the day. Cosy yet breathable, these sheets are perfect all year round!"<br><br><strong>- Carl,</strong><br>eCommerce Manager</div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+         <!-- =========================
+REVIEW BLOCK (reusable, 600px-safe)
+Swap these tokens (find/replace):
+  {{RB_LINK}}               -> Click-through URL
+  {{RB_IMG_SRC}}            -> Image URL
+  {{RB_IMG_ALT}}            -> Image alt text
+  {{RB_HEADING}}            -> Headline text
+  {{RB_STARS_HTML}}         -> Optional stars row HTML (or leave empty)
+  {{RB_COPY}}               -> Body copy (can include quotes)
+  {{RB_SIGNOFF_NAME}}       -> Sign-off name
+  {{RB_SIGNOFF_TITLE}}      -> Sign-off title
+
+Optional style tokens (keep defaults or replace):
+  {{RB_BG|#f5ece9}}         -> Block background color
+  {{RB_OUTER_PADDING|24px 20px}} -> Outer padding
+  {{RB_COL_PAD|0 10px}}     -> Column inner padding
+  {{RB_TEXT_ALIGN|center}}  -> Text alignment
+  {{RB_TEXT_COLOR|#212b36}} -> Text color
+  {{RB_HEADING_SIZE|19px}}  -> Heading font size
+  {{RB_COPY_SIZE|15px}}     -> Body font size
+========================= -->
+<tr>
+  <!-- [RB_BG] background + [RB_OUTER_PADDING] outer padding -->
+  <td style="padding:{{RB_OUTER_PADDING|24px 20px}};background:{{RB_BG|#f5ece9}};">
+    <!-- 600px lock container -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+           style="max-width:600px;margin:0 auto;">
+      <tr>
+        <!-- ================= LEFT COLUMN: IMAGE ================= -->
+        <!-- [RB_IMG] image + link -->
+        <td class="stack" width="50%" valign="top" style="padding:{{RB_COL_PAD|0 10px}};">
+          <a href="https://myhouse.com.au/products/riley-bamboo-cotton-sheet-set" target="_blank">
+            <img src="http://image.myhouse.com.au/custloads/1027522498/md_611724.jpg" width="260" alt="{{RB_IMG_ALT}}"
+                 style="display:block;width:100%;max-width:260px;height:auto;border:0;">
+          </a>
+        </td>
+
+        <!-- ================= RIGHT COLUMN: COPY ================= -->
+        <!-- [RB_TEXT] heading, stars, body, sign-off -->
+        <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
+          <div style="text-align:center;color:#212b36;">
+            <!-- [RB_HEADING] -->
+            <div style="font-size:19px;margin:8px 0 10px;">
+              <strong>Carl's Bedroom Favourites</strong>
+            </div>
+
+            <!-- [RB_STARS_HTML] optional stars row (leave empty if not used) -->
+            <div style="margin:4px 0 14px;">
+              
+            </div>
+
+            <!-- [RB_COPY] + [RB_SIGNOFF] -->
+            <div style="font-size:15px;line-height:1.6;">
+              "Nothing beats sinking into the sofest comfortable sheets at the end of the day. Cosy yet breathable, these sheets are perfect all year round!"
+              <br><br>
+              <strong>- Carl.,</strong><br>eCommerce Manager
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- ===== END REVIEW BLOCK ===== -->
+
 
             <!-- BIG CTA: Shop All Bedroom -->
             <tr>
