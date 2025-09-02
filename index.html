@@ -195,70 +195,29 @@
               </td>
             </tr>
 
-         <!-- =========================
-REVIEW BLOCK (reusable, 600px-safe)
-Swap these tokens (find/replace):
-  {{RB_LINK}}               -> Click-through URL
-  {{RB_IMG_SRC}}            -> Image URL
-  {{RB_IMG_ALT}}            -> Image alt text
-  {{RB_HEADING}}            -> Headline text
-  {{RB_STARS_HTML}}         -> Optional stars row HTML (or leave empty)
-  {{RB_COPY}}               -> Body copy (can include quotes)
-  {{RB_SIGNOFF_NAME}}       -> Sign-off name
-  {{RB_SIGNOFF_TITLE}}      -> Sign-off title
-
-Optional style tokens (keep defaults or replace):
-  {{RB_BG|#f5ece9}}         -> Block background color
-  {{RB_OUTER_PADDING|24px 20px}} -> Outer padding
-  {{RB_COL_PAD|0 10px}}     -> Column inner padding
-  {{RB_TEXT_ALIGN|center}}  -> Text alignment
-  {{RB_TEXT_COLOR|#212b36}} -> Text color
-  {{RB_HEADING_SIZE|19px}}  -> Heading font size
-  {{RB_COPY_SIZE|15px}}     -> Body font size
-========================= -->
-<tr>
-  <!-- [RB_BG] background + [RB_OUTER_PADDING] outer padding -->
-  <td style="padding:{{RB_OUTER_PADDING|24px 20px}};background:{{RB_BG|#f5ece9}};">
-    <!-- 600px lock container -->
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
-           style="max-width:600px;margin:0 auto;">
-      <tr>
-        <!-- ================= LEFT COLUMN: IMAGE ================= -->
-        <!-- [RB_IMG] image + link -->
-        <td class="stack" width="50%" valign="top" style="padding:{{RB_COL_PAD|0 10px}};">
-          <a href="https://myhouse.com.au/products/riley-bamboo-cotton-sheet-set" target="_blank">
-            <img src="http://image.myhouse.com.au/custloads/1027522498/md_611724.jpg" width="260" alt="{{RB_IMG_ALT}}"
-                 style="display:block;width:100%;max-width:260px;height:auto;border:0;">
-          </a>
-        </td>
-
-        <!-- ================= RIGHT COLUMN: COPY ================= -->
-        <!-- [RB_TEXT] heading, stars, body, sign-off -->
-        <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
-          <div style="text-align:center;color:#212b36;">
-            <!-- [RB_HEADING] -->
-            <div style="font-size:19px;margin:8px 0 10px;">
-              <strong>Carl's Bedroom Favourites</strong>
-            </div>
-
-            <!-- [RB_STARS_HTML] optional stars row (leave empty if not used) -->
-            <div style="margin:4px 0 14px;">
-              
-            </div>
-
-            <!-- [RB_COPY] + [RB_SIGNOFF] -->
-            <div style="font-size:15px;line-height:1.6;">
-              "Nothing beats sinking into the sofest comfortable sheets at the end of the day. Cosy yet breathable, these sheets are perfect all year round!"
-              <br><br>
-              <strong>- Carl.,</strong><br>eCommerce Manager
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-<!-- ===== END REVIEW BLOCK ===== -->
+          <!-- REVIEW BLOCK 1 -->
+            <tr>
+              <td style="padding:24px 20px;background:#f5ece9;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;">
+                  <tr>
+                    <td class="stack" width="50%" valign="top" style="padding:0 10px;">
+                      <a href="https://myhouse.com.au/products/riley-bamboo-cotton-sheet-set" target="_blank">
+                        <img src="http://image.myhouse.com.au/custloads/1027522498/md_611724.jpg" width="260" alt="Ashton Sheet Set" style="width:100%;max-width:260px;">
+                      </a>
+                    </td>
+                    <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
+                      <div style="text-align:center;color:#212b36;">
+                        <div style="font-size:19px;margin:8px 0 10px;"><b>Carl's Bedroom Favourites</b></div>
+                        <div style="margin:4px 0 14px;">
+                          
+                        </div>
+                        <div style="font-size:15px;line-height:1.6;">"Nothing beats sinking into the sofest comfortable sheets at the end of the day. Cosy yet breathable, these sheets are perfect all year round!"<br><br><strong>- Carl,</strong><br>eCommerce Manager</div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
 
             <!-- BIG CTA: Shop All Bedroom -->
@@ -284,25 +243,69 @@ Optional style tokens (keep defaults or replace):
                     <!-- COPY -->
                     <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
                       <div style="text-align:center;color:#212b36;">
-                        <div style="font-size:19px;margin:8px 0 10px;">Incredibly soft and luxurious</div>
+                        <div style="font-size:19px;margin:8px 0 10px;"><b>Zoe's Most Loved Living Room Additions</b></div>
                         <div style="margin:4px 0 14px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;">
+                          
                         </div>
                         <div style="font-size:15px;line-height:1.6;">
-                          The Celene range of bath towels are incredibly soft and luxurious and stay that way for the life of them. The only towels that I continue to buy. The service and delivery was easy and fast. Highly recommend these Celene towels.
-                          <br><br><strong>- Jane C.</strong><br>Verified Buyer
+                          "The perfect rug that adds warmth and cosiness to mt living space. I get complimented on this rug everytime I have guests over."
+                          <br><br><strong>- Zoe </strong><br>Visual Merchandier
                         </div>
                       </div>
                     </td>
                     <!-- IMAGE -->
                     <td class="stack" width="50%" valign="top" style="padding:0 10px;">
-                      <a href="https://link.myhouse.com.au/u/nrd.php?p=_$llid$_2905634_1_43&ems_l=0&i=1&_esuh=_11_a441175c59db80d6976249c7facd643bd27c3ff62bcadacc2207c5efe846e4d9" target="_blank">
-                        <img src="https://image.myhouse.com.au/custloads/1027522498/md_611702.jpg" width="260" alt="Celene Egyptian Loop Bath Towel" style="width:100%;max-width:260px;">
+                      <a href="https://myhouse.com.au/products/darren-palmer-moorland-rug-fig" target="_blank">
+                        <img src="http://image.myhouse.com.au/custloads/1027522498/md_611725.jpg" width="260" alt="Celene Egyptian Loop Bath Towel" style="width:100%;max-width:260px;">
                       </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Spacer 16px (600px wide) -->
+            <tr>
+              <td align="center" style="padding:0;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;">
+                  <tr><td style="height:16px;line-height:16px;font-size:0;">&nbsp;</td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- LARGE CTA: SHOP ALL RUGS -->
+            <tr>
+              <td align="center" style="padding:0 20px 20px;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;background:#081f3f;border-radius:2px;">
+                  <tr>
+                    <td align="center" style="padding:18px 28px;">
+                      <a href="https://myhouse.com.au/collections/home-decor-rugs" target="_blank" style="display:block;font-family:Tahoma,Arial,Helvetica,sans-serif;font-size:20px;line-height:1;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:.2px;">
+                        SHOP ALL RUGS
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- REVIEW BLOCK 3 -->
+            <tr>
+              <td style="padding:24px 20px;background:#f5ece9;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;">
+                  <tr>
+                    <td class="stack" width="50%" valign="top" style="padding:0 10px;">
+                      <a href="https://myhouse.com.au/products/myhouse-arlo-bath-towel-collection" target="_blank">
+                        <img src="http://image.myhouse.com.au/custloads/1027522498/md_611722.jpg" width="260" alt="Baccarat Granite Cookware Set 6 Piece" style="width:100%;max-width:260px;">
+                      </a>
+                    </td>
+                    <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
+                      <div style="text-align:center;color:#212b36;">
+                        <div style="font-size:19px;margin:8px 0 10px;"><b>Kat's Bathroom Must-Haves</b></div>
+                        <div style="margin:4px 0 14px;">
+                          
+                        </div>
+                        <div style="font-size:15px;line-height:1.6;">"Instantly upgrades my bathroom. Made from 100% cotton, they're insanely soft, like a little luxury every time you dry off."<br><br><strong>- Kat,</strong><br><em>Product Designer</em></div>
+                      </div>
                     </td>
                   </tr>
                 </table>
@@ -324,60 +327,8 @@ Optional style tokens (keep defaults or replace):
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;background:#081f3f;border-radius:2px;">
                   <tr>
                     <td align="center" style="padding:18px 28px;">
-                      <a href="https://link.myhouse.com.au/u/nrd.php?p=_$llid$_2905634_1_45&ems_l=0&i=1&_esuh=_11_ea6413ac6653285044347290345b2f0d57b1fac86f24a20b739ca3350d9351ba" target="_blank" style="display:block;font-family:Tahoma,Arial,Helvetica,sans-serif;font-size:20px;line-height:1;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:.2px;">
+                      <a href="https://myhouse.com.au/collections/bath" target="_blank" style="display:block;font-family:Tahoma,Arial,Helvetica,sans-serif;font-size:20px;line-height:1;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:.2px;">
                         SHOP ALL BATHROOM
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- REVIEW BLOCK 3 -->
-            <tr>
-              <td style="padding:24px 20px;background:#f5ece9;">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;">
-                  <tr>
-                    <td class="stack" width="50%" valign="top" style="padding:0 10px;">
-                      <a href="https://link.myhouse.com.au/u/nrd.php?p=_$llid$_2905634_1_47&ems_l=0&i=1&_esuh=_11_7a493bcc2d5673c1faf0cee7a74dcd25678ae24639aba7c4c7cfdcb93d4498b5" target="_blank">
-                        <img src="https://image.myhouse.com.au/custloads/1027522498/md_611703.jpg" width="260" alt="Baccarat Granite Cookware Set 6 Piece" style="width:100%;max-width:260px;">
-                      </a>
-                    </td>
-                    <td class="stack" width="50%" valign="middle" style="padding:0 10px;">
-                      <div style="text-align:center;color:#212b36;">
-                        <div style="font-size:19px;margin:8px 0 10px;">Cookware making life easy</div>
-                        <div style="margin:4px 0 14px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;margin-right:2px;">
-                          <img src="https://image.myhouse.com.au/custloads/1027522498/vce/star-solid-full.png" width="20" alt="★" style="display:inline-block;">
-                        </div>
-                        <div style="font-size:15px;line-height:1.6;">Excellent craftsmanship – a pleasure to cook with. Perfect heat distribution and easy to clean.<br><br><strong>- Bronwen B.</strong><br>Verified Buyer</div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Spacer 16px (600px wide) -->
-            <tr>
-              <td align="center" style="padding:0;">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;">
-                  <tr><td style="height:16px;line-height:16px;font-size:0;">&nbsp;</td></tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- LARGE CTA: SHOP ALL KITCHEN -->
-            <tr>
-              <td align="center" style="padding:0 20px 20px;">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;background:#081f3f;border-radius:2px;">
-                  <tr>
-                    <td align="center" style="padding:18px 28px;">
-                      <a href="https://link.myhouse.com.au/u/nrd.php?p=_$llid$_2905634_1_49&ems_l=0&i=1&_esuh=_11_5cb8072c7f98e341ef93d10f345a975749b5cbafc66594a33c814a44509253ba" target="_blank" style="display:block;font-family:Tahoma,Arial,Helvetica,sans-serif;font-size:20px;line-height:1;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:.2px;">
-                        SHOP ALL KITCHEN
                       </a>
                     </td>
                   </tr>
